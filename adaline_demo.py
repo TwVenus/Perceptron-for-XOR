@@ -41,7 +41,7 @@ class Adaline(object):
                 for j in range(0, self.feature_list.shape[1]):
                     update = np.sum([(float(self.feature_list[x][j]) * self.error_list[x]) for x in range(0, self.feature_list.shape[0])])
                     self.weight_list[j] = self.weight_list[j] + update * self.learning_rate
-                self.weight_list[2] += np.sum(self.error_list[x] for x in range(0, self.feature_list.shape[0]))
+                self.weight_list[2] += np.sum(self.error_list[x] for x in range(0, self.feature_list.shape[0]))* self.learning_rate
 
 class Diagram(object):
     def __init__(self, dataset, adaline):

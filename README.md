@@ -1,4 +1,4 @@
-# bussiness_intelligence_hw1
+# bussiness_intelligence_perceptron
 ## 使用方法
 ### 輸入下列語法執行
 #### 1. Adaline
